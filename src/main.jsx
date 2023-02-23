@@ -3,8 +3,17 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+// src/main.jsx
+import 'bootstrap/dist/css/bootstrap.css'
+import { BrowserRouter as Router } from 'react-router-dom'
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+root.render(
+  <Router>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Router>
 )
